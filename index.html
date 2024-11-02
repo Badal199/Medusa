@@ -3,33 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prediction Results</title>
+    <title>Hacking Simulation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="hacker-background">
     <div class="container">
-        <h1>MEDUSA CHEAT 30 SECOND </h1>
+        <h1>BN LAST KING MEDUSA HACKING RESULT PREDICTION</h1>
+        <input type="text" id="userInput" placeholder="Enter a 3-digit number" maxlength="3">
+        <button id="getResultBtn">Get Result</button>
+        <p id="resultDisplay"></p>
+    </div>
 
-        <div class="timer-box">
-            <h2>Period Number:</h2>
-            <div id="period30s" class="period-number"></div>
+    <audio id="clickSound" src="click-sound.mp3"></audio>
 
-            <h2>Timer:</h2>
-            <div id="timer30s" class="timer"></div>
-        </div>
-
-        <div class="result-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Period</th>
-                        <th>Result</th>
-                    </tr>
-                </thead>
-                <tbody id="results-body">
-                    <!-- Result rows will be added dynamically -->
-                </tbody>
-            </table>
+    <!-- Modal for displaying result -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="modalResult" class="result-text"></p>
         </div>
     </div>
 
